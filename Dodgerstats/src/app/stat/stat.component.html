@@ -1,0 +1,30 @@
+<div class="container" style=width:100%>
+    <ul class="list-group" *ngIf="loadedStats.length >= 1">
+        <li class="list-group-item" *ngFor="let stat of loadedStats">
+            <div class="container" style=width:100% >
+                <table class="table table-striped table-dark" style="align-content: center;">
+                    <thead>
+                        <tr>
+                            <th>
+                                Rank
+                            </th>
+                            <th>
+                                Player
+                            </th>
+                            <th>
+                                Batting Avg.
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let row of stat.leader_hitting_mux.queryResults.row">
+                            <td>{{row.rank}}</td>
+                            <td>{{row.name_display_first_last}}</td>
+                            <td>{{ row.avg}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </li>
+    </ul>
+</div>

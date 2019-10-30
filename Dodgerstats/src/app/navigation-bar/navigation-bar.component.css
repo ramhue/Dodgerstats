@@ -1,0 +1,19 @@
+nav{
+    background-color: #003882;
+    margin: auto;
+      
+}
+.navbar a{
+    float: left;
+    color: white;
+    text-align: bottom;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover{
+      color: black;
+      background-color: dodgerblue;
+  }
+  .form-inline{
+      float: right;
+  }
