@@ -1,6 +1,6 @@
 # Dodgerstats
  This is a simple web app that uses an exsiting Rest api to fetch stats.
- This is only intended 
+ This is only intended for personal use
 # Tech Stack
 	-Angular8
 	-Css
